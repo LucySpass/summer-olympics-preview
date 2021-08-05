@@ -1,0 +1,15 @@
+@import "./src/constants/colors";
+
+.footer {
+  background-color: $main-color;
+  color: #fff;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  font-size: 0.75rem;
+  align-items: center;
+
+  i {
+    color: #fff;
+  }
+}

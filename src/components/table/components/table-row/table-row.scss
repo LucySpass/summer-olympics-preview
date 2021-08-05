@@ -1,0 +1,11 @@
+@import "./src/constants/colors";
+
+.table-row {
+  font-size: 1.2rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+.table-row + .table-row {
+  border-top: 1px solid $shadow-color;
+}

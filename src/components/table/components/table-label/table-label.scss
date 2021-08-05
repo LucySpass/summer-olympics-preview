@@ -1,0 +1,8 @@
+.table-label {
+  cursor: pointer;
+  display: flex;
+
+  &__text {
+    margin-right: 8px;
+  }
+}
