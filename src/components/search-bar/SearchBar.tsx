@@ -2,13 +2,17 @@ import React, {useEffect, useState} from 'react';
 import './search-bar.scss';
 import useDebounce from "./hooks/useDebounce";
 
-function SearchBar({fetchData = {} as any}) {
+interface SearchBarPropsInterface {
+  fetchData: (term: string) => void;
+}
+
+function SearchBar({fetchData}: SearchBarPropsInterface) {
   const [keyword, setKeyword] = useState<string>('');
   const debouncedSearchTerm = useDebounce(keyword, 500);
 
   useEffect(() => {
       fetchData(debouncedSearchTerm);
-    }, [debouncedSearchTerm]
+    }, [fetchData, debouncedSearchTerm]
   );
 
   return (
