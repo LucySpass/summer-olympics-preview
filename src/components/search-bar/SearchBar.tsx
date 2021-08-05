@@ -12,7 +12,7 @@ function SearchBar({fetchData}: SearchBarPropsInterface) {
 
   useEffect(() => {
       fetchData(debouncedSearchTerm);
-    }, [fetchData, debouncedSearchTerm]
+    }, [debouncedSearchTerm]
   );
 
   return (
