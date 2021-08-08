@@ -42,10 +42,35 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font: 16px 'Roboto', sans-serif;
+    font-size: 16px;
     font-family: "Roboto", BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV*/
+
+@media (min-width: 1025px) {
+    html, body {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    html, body {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    html, body {
+        font-size: 12px;
+    }
 }
 
 #root {

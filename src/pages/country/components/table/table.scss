@@ -1,0 +1,23 @@
+@import "../../../../constants/colors";
+
+.country-table {
+  width: 100%;
+  font-size: 1rem;
+  text-transform: capitalize;
+
+  thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  thead {
+    font-family: 'ZenLoop', sans-serif;
+    font-size: 1.5rem;
+    border-bottom: 1px solid $shadow-color;
+  }
+
+  tr {
+    border-bottom: 1px $shadow-color solid;
+  }
+}

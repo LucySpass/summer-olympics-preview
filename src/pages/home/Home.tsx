@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import './home.scss';
-import {Footer, Header, Table} from "../../components";
 import {FullCountryList} from "../../constants/full-country-list";
 import {CountryCodes} from "../../constants/country-codes";
 import {CountryInterface} from "../../interfaces/country-interface";
 import {Participants} from "../../constants/participants";
+import {CountriesTable} from "./components";
 
 function Home() {
   const [data, setData] = useState<CountryInterface[]>([])
@@ -22,14 +22,8 @@ function Home() {
   }, [])
 
   return (
-    <div className='home'>
-      <Header/>
-      <div className='home__content'>
-        <Table headers={['Country', 'Flag', 'Number of participants']}
-               data={[...data]}/>
-      </div>
-      <Footer/>
-    </div>
+    <CountriesTable headers={['Country', 'Flag', 'Number of participants']}
+                    data={[...data]}/>
   );
 }
 

@@ -10,6 +10,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.1.8",
     "netlify-cli": "^5.2.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -19,7 +20,6 @@
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {
-    "@types/react-window": "^1.8.5",
     "node-sass": "^6.0.0",
     "sass-loader": "^12.0.0"
   },

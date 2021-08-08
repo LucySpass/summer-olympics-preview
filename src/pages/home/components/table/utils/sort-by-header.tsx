@@ -1,4 +1,4 @@
-import {CountryInterface} from '../../../interfaces/country-interface';
+import {CountryInterface} from '../../../../../interfaces/country-interface';
 import {sortNumbers, sortString} from './sort-functions';
 
 export function SortByHeader(header: string, sortOrder: 'asc' | 'desc', data: CountryInterface[]) {

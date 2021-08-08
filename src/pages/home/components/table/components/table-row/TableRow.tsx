@@ -1,17 +1,19 @@
 import React from 'react';
 import './table-row.scss';
-import {ReactComponent as BlankFlag} from "../../../../static/logos/blank-flag.svg";
-import {CountryInterface} from "../../../../interfaces/country-interface";
+import {ReactComponent as BlankFlag} from "../../../../../../static/logos/blank-flag.svg";
+import {CountryInterface} from "../../../../../../interfaces/country-interface";
 
 interface TableRowPropsInterface {
   countryInfo: CountryInterface;
+  onRowClick: (countryInfo: CountryInterface) => void;
 }
 
-function TableRow({countryInfo}: TableRowPropsInterface) {
+function TableRow({countryInfo, onRowClick}: TableRowPropsInterface) {
   return (
     <tr className='table-row'
-        key={'table-item-' + countryInfo.name}>
-      <td className='table-item__text'>
+        key={'table-item-' + countryInfo.name}
+        onClick={() => onRowClick(countryInfo)}>
+      <td>
         {countryInfo.name}
       </td>
       <td>

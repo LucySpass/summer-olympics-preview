@@ -1,0 +1,24 @@
+@import "../../../../constants/colors";
+
+.table {
+  width: 100%;
+
+  tbody {
+    display: block;
+    height: calc(100vh - 15.42rem);
+    overflow: auto;
+  }
+
+  thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  thead {
+    font-family: 'ZenLoop', sans-serif;
+    font-size: 1.7rem;
+    background-color: $main-color-light;
+    border-bottom: 1px solid $shadow-color;
+  }
+}

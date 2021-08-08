@@ -2,11 +2,14 @@
 
 .header {
   font-family: 'ZenLoop', sans-serif;
-  height: 60px;
   display: flex;
   padding: 1.5rem;
   box-shadow: 0px 0px 4px 0px $shadow-color;
   align-items: center;
   justify-content: space-around;
   background-color: $main-color-light;
+
+  h1 {
+    margin: 0.2rem;
+  }
 }

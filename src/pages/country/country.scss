@@ -1,0 +1,37 @@
+.country {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    h1 {
+      font-family: 'ZenLoop', sans-serif;
+      margin: 0;
+      padding: 0 1rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    &__medals {
+      padding: 2rem;
+      flex: 2;
+    }
+
+    &__sports {
+      background: #F8F8FA;
+      border-radius: 16px;
+      flex: 1;
+      padding: 2rem;
+    }
+  }
+}
